@@ -81,23 +81,23 @@
         ],
         "examples": [
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usestate/image-1.png",
+            "image": "/usestate/image-1.png",
             "explanation": "Create state variable and set function"
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usestate/image-2.png",
+            "image": "/usestate/image-2.png",
             "explanation": "The state variable can be of any type: a string, a number, an array, etc."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usestate/image-3.png",
+            "image": "/usestate/image-3.png",
             "explanation": "Change the state by calling the set function with a new value. In this example, the set function is called directly inside a button's onClick handler. Upon clicking the button, the state updates."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usestate/image-4.png",
+            "image": "/usestate/image-4.png",
             "explanation": "Now you can use the state variable inside your JSX and, for example, display it on the screen."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usestate/image-5.png",
+            "image": "/usestate/image-5.png",
             "explanation": "You can go a step further and create a boolean state variable for conditional rendering or a UI toggle element."
           }
         ],
@@ -130,27 +130,27 @@
         ],
         "examples": [
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usereducer/image-1.png",
+            "image": "/usereducer/image-1.png",
             "explanation": "Create the state object and dispatch function, and pass in the reducer and initialState"
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usereducer/image-2.png",
+            "image": "/usereducer/image-2.png",
             "explanation": "Define the initial state and pass it into the useReducer hook. This sets up the starting state for your component."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usereducer/image-3.png",
+            "image": "/usereducer/image-3.png",
             "explanation": "Create the reducer function, which receives the current state and an action as arguments. The reducer contains all state logic and returns an updated state. In this example, a switch statement is used to define different actions and their corresponding state updates."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usereducer/image-4.png",
+            "image": "/usereducer/image-4.png",
             "explanation": "Trigger a state update by calling the dispatch function with a specified action. If all state update logic is handled inside the reducer, simply dispatching the action type will apply the corresponding update."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usereducer/image-5.png",
+            "image": "/usereducer/image-5.png",
             "explanation": "Display your state in JSX. Remember, in this example state returned by the reducer function is an object."
           },
           {
-            "image": "https://raw.githubusercontent.com/Pand3moniuMx3/MONOCHROMATIC_API/main/images/usereducer/image-6.png",
+            "image": "/usereducer/image-6.png",
             "explanation": "If you want, you can even update multiple state variables simulatenously. This makes useReducer better than useState for handling complex state logic."
           }
         ],
