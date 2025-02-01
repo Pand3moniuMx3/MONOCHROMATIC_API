@@ -180,20 +180,7 @@
             "explanation": "By wrapping your components into a context Provider and passing them in as a children prop, you allow them to use the state within the context. It needs a value prop which specifies what state the provider is supposed to broadcast."
           }
         ],
-        "examples": [
-          {
-            "image": "/createcontext/image-1.png",
-            "explanation": "Create the context. Simply enought, you only have to give it a name.",
-          },
-          {
-            "image" "/createcontext/image-2.png",
-            "explanation": "If you need, you can define a default value that the Context will be mounted with."
-          },
-          {
-            "image" "/createcontext/image-3.png",
-            "explanation": "To broadcast the context (state) globally, create a Context.Provider. If you need to access said state inside a component, wrap it into the Context.Provider. This is important - otherwise the component won't be able to access the global state."
-          }
-        ],
+        "examples": [],
         "docs": "https://react.dev/reference/react/createContext",
         "completed": false
       },
@@ -213,12 +200,7 @@
             "explanation": "After specifying what context the useContext hook is supposed to read, it will return state specified in the Context.Provider's 'value'"
           }
         ],
-        "examples": [
-          {
-            "image" "/usecontext/image-1.png",
-            "explanation": "To access global state, import useContext and a Context object into your component, and destructure it."
-          }
-        ],
+        "examples": [],
         "docs": "https://react.dev/reference/react/useContext",
         "completed": false
       }
