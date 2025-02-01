@@ -243,7 +243,20 @@
             "explanation": "The dependency array specifies when the useEffect hook is supposed to run. If empty, the dependency array will run any functions inside the hook on mount. The dependency array takes in variables, which will trigger the effect upon changing."
           }
         ],
-        "examples": [],
+        "examples": [
+          {
+            "image": "/useeffect/image-1.png",
+            "explanation": "Create an effect. Include the setup function and the dependency array."
+          },
+          {
+            "image": "/useeffect/image-2.png",
+            "explanation": "The prime goal of an effect is to run some code when triggered. Write that code in the setup function. in React, the useEffect hook is popular for handling fetch requests (see example). The dependency array is still empty, so the effect will run and fetch the data only oncem on the initial mount."
+          },
+          {
+            "image": "/useeffect/image-2.png",
+            "explanation": "As you can see in the example, we added a search functionality to our effect. Now, the data should be re-fetched every time the query changes, right? We can do that by including the query state variable inside the dependency array. In other words, the effect will run on mount and every time the query state updates."
+          }
+        ],
         "docs": "https://react.dev/reference/react/useEffect",
         "completed": false
       }
