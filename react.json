@@ -24,19 +24,19 @@
         ],
         "examples": [
           {
-            "image": "/project-setup/image-1.PNG",
+            "image": "/project-setup/image-1.png",
             "explanation": "Open your command prompt (or terminal on Mac), navigate to the folder you want to create the app in, and run 'npx create-react-app' followed by the name of your project."
           },
           {
-            "image": "/project-setup/image-2.PNG",
+            "image": "/project-setup/image-2.png",
             "explanation": "After running the create command, Node.js will download all the necessary packages and set up the React project for you. Once this process is finished, you can open your project."
           },
           {
-            "image": "/project-setup/image-3.PNG",
+            "image": "/project-setup/image-3.png",
             "explanation": "The first thing you need to do after creating a new React project, is cleaning up the files a little. Open up the /public and /src folders, and delete the highlighted files, along with their imports."
           },
           {
-            "image": "/project-setup/image-4.PNG",
+            "image": "/project-setup/image-4.png",
             "explanation": "Next, move your existing src files into separate folders, like /components and /styles. Then update the imports and clean the index.js file up, so that it looks like this:"
           },
           {
@@ -44,7 +44,7 @@
             "explanation": "Right now, the App.js component is imported into the root, but doesn't really return anything. Let's fix that and write a simple React component function. Remember to export it."
           },
           {
-            "image": "/project-setup/image-6.PNG",
+            "image": "/project-setup/image-6.png",
             "explanation": "To start your application, open the VScode terminal and run the starting command. Since you made your app using 'create-react-app', the starting command will always be 'npm start'."
           }
         ],
@@ -55,7 +55,20 @@
         "title": "Components",
         "path": "components",
         "definition": "Components are regular JavaScript functions that describe a piece of the UI by returning JSX. It can be thought of as a “blueprint” or a “template”. Following React's separation of concerns, every Component includes its own state, logic and appearance.",
-        "examples": [],
+        "examples": [
+          {
+            "image": "/components/image-1.png",
+            "explanation": "Create a new component. It's really just a JavaScript function that returns JSX. This is the component's appearance."
+          },
+          {
+            "image": "/components/image-2.png",
+            "explanation": "Default export your component. This is a requirement if you want to use it within your app."
+          },
+          {
+            "image": "/components/image-3.png",
+            "explanation": "Add logic at the top level of a component. You can put any JavaScript in here, as well as React hooks. This is the component's state and logic."
+          }
+        ],
         "docs": "https://react.dev/reference/react/Component",
         "completed": false
       },
@@ -63,7 +76,16 @@
         "title": "Instances",
         "path": "instances",
         "definition": "Instances are created when we use components. For example, when we have a specific component reused 4 times, there are 4 instances of this one component. They can be thought of as a physical manifestation of the component living in our component tree. Instances hold their own state and props.",
-        "examples": [],
+        "examples": [
+          {
+            "image": "/instances/image-1.png",
+            "explanation": "A (component) instance is a physical manifestation of a React component. After all, components are just JavaScript functions. Only when we create an instance of a component it appears in our Component Tree."
+          },
+          {
+            "image": "/instances/image-2.png",
+            "explanation": "There can be multiple instances of the same component. In this example, we have four instances of the same Book component, each one with a different title."
+          }
+        ],
         "docs": "",
         "completed": false
       },
