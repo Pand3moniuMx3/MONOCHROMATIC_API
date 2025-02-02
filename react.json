@@ -16,7 +16,38 @@
         "title": "Project Setup",
         "path": "project-setup",
         "definition": "The most popular way of setting up a react project is by using 'create-react-app'. create-react-app is a complete starter kit for react applications. Simply run 'npx create-react-app project-name' the command prompt (alt. terminal on MacOS). Any app created this way automatically comes with a development server, a webpack for module bundling and important developer tools like ESLint, Prettier, and Jest.",
-        "examples": [],
+        "parameters": [
+          {
+            "parameter": "npx create-react-app",
+            "explanation": "is the most popular starter kit for small react applications."
+          }
+        ],
+        "examples": [
+          {
+            "image": "/project-setup/image-1.png",
+            "explanation": "Open your command prompt (or terminal on Mac), navigate to the folder you want to create the app in, and run 'npx create-react-app' followed by the name of your project."
+          },
+          {
+            "image": "/project-setup/image-2.png",
+            "explanation": "After running the create command, Node.js will download all the necessary packages and set up the React project for you. Once this process is finished, you can open your project."
+          },
+          {
+            "image": "/project-setup/image-3.png",
+            "explanation": "The first thing you need to do after creating a new React project, is cleaning up the files a little. Open up the /public and /src folders, and delete the highlighted files, along with their imports."
+          },
+          {
+            "image": "/project-setup/image-4.png",
+            "explanation": "Next, move your existing src files into separate folders, like /components and /styles. Then update the imports and clean the index.js file up, so that it looks like this:"
+          },
+          {
+            "image": "/project-setup/image-5.png",
+            "explanation": "Right now, the App.js component is imported into the root, but doesn't really return anything. Let's fix that and write a simple React component function. Remember to export it."
+          },
+          {
+            "image": "/project-setup/image-6.png",
+            "explanation": "To start your application, open the VScode terminal and run the starting command. Since you made your app using 'create-react-app', the starting command will always be 'npm start'."
+          }
+        ],
         "docs": "https://react.dev/learn/start-a-new-react-project",
         "completed": false
       },
@@ -253,7 +284,7 @@
             "explanation": "The prime goal of an effect is to run some code when triggered. Write that code in the setup function. in React, the useEffect hook is popular for handling fetch requests (see example). The dependency array is still empty, so the effect will run and fetch the data only oncem on the initial mount."
           },
           {
-            "image": "/useeffect/image-3.png",
+            "image": "/useeffect/image-2.png",
             "explanation": "As you can see in the example, we added a search functionality to our effect. Now, the data should be re-fetched every time the query changes, right? We can do that by including the query state variable inside the dependency array. In other words, the effect will run on mount and every time the query state updates."
           }
         ],
@@ -283,7 +314,16 @@
             "explanation": "A mutable property that is initially set to the initialValue passed into the hook. It will not change during re-renders, unless you change it to something else manually."
           }
         ],
-        "examples": [],
+        "examples": [
+          {
+            "image": "/useref/image-1.png",
+            "explanation": "Create a ref and give it a default value. The ref will be mounted with this value."
+          },
+          {
+            "image": "/useref/image-2.png",
+            "explanation": "The ref object can be referenced through it's 'current' property. It works just like state, with doesn't trigger a re-render when updated. We can leverage this in a Click Counter component. The handleClick function updates the ref value, but doesn't re-render the component while doing so."
+          }
+        ],
         "docs": "https://react.dev/reference/react/useRef",
         "completed": false
       }
