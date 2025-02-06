@@ -24,19 +24,19 @@
         ],
         "examples": [
           {
-            "image": "/project-setup/image-1.PNG",
+            "image": "/project-setup/image-1.png",
             "explanation": "Open your command prompt (or terminal on Mac), navigate to the folder you want to create the app in, and run 'npx create-react-app' followed by the name of your project."
           },
           {
-            "image": "/project-setup/image-2.PNG",
+            "image": "/project-setup/image-2.png",
             "explanation": "After running the create command, Node.js will download all the necessary packages and set up the React project for you. Once this process is finished, you can open your project."
           },
           {
-            "image": "/project-setup/image-3.PNG",
+            "image": "/project-setup/image-3.png",
             "explanation": "The first thing you need to do after creating a new React project, is cleaning up the files a little. Open up the /public and /src folders, and delete the highlighted files, along with their imports."
           },
           {
-            "image": "/project-setup/image-4.PNG",
+            "image": "/project-setup/image-4.png",
             "explanation": "Next, move your existing src files into separate folders, like /components and /styles. Then update the imports and clean the index.js file up, so that it looks like this:"
           },
           {
@@ -44,7 +44,7 @@
             "explanation": "Right now, the App.js component is imported into the root, but doesn't really return anything. Let's fix that and write a simple React component function. Remember to export it."
           },
           {
-            "image": "/project-setup/image-6.PNG",
+            "image": "/project-setup/image-6.png",
             "explanation": "To start your application, open the VScode terminal and run the starting command. Since you made your app using 'create-react-app', the starting command will always be 'npm start'."
           }
         ],
@@ -306,7 +306,7 @@
             "explanation": "The prime goal of an effect is to run some code when triggered. Write that code in the setup function. in React, the useEffect hook is popular for handling fetch requests (see example). The dependency array is still empty, so the effect will run and fetch the data only oncem on the initial mount."
           },
           {
-            "image": "/useeffect/image-3.png",
+            "image": "/useeffect/image-2.png",
             "explanation": "As you can see in the example, we added a search functionality to our effect. Now, the data should be re-fetched every time the query changes, right? We can do that by including the query state variable inside the dependency array. In other words, the effect will run on mount and every time the query state updates."
           }
         ],
@@ -359,16 +359,38 @@
       {
         "title": "useMemo",
         "path": "usememo",
-        "definition": "",
-        "examples": [],
+        "definition": "useMemo is a performance hook which comes in handy when dealing with heavy-loading components. It memoizes the results of a heavy calculation in browser cache. If a component with memoized values re-renders, and it's values are the same, they will be pulled from browser cache instead of being calculated again. The component's value will only be re-calculated if it's dependencies have changed.",
+        "examples": [
+          {
+            "image": "/usememo/image-1.png",
+            "explanation": "Wrap the heavy component into a memo const."
+          },
+          {
+            "image": "/usememo/image-2.png",
+            "explanation": "If the heavy component receives any props, you need to memoize them too. In this case, our component receives an object prop. In this example, the dependencies array is empty, so the component's value will only be calculated once, on mount."
+          },
+          {
+            "image": "/usememo/image-3.png",
+            "explanation": "To allow the memoized value to be re-calculated when a certain state value changes, simply include said value in the dependency array. In this example, the object depends on the 'show' state."
+          }
+        ],
         "docs": "https://react.dev/reference/react/useMemo",
         "completed": false
       },
       {
         "title": "useCallback",
         "path": "usecallback",
-        "definition": "",
-        "examples": [],
+        "definition": "the useCallback hook lets you memoize a function passed into a memoized component. If the function returns the same value as before, the component won't be re-rendered.",
+        "examples": [
+          {
+            "image": "/usecallback/image-1.png",
+            "explanation": "To memoize a function, wrap it into the useCallback hook, give it a const name, and specify the dependency array. Memoized functions can be nameless."
+          },
+          {
+            "image": "/usecallback/image-2.png",
+            "explanation": "If your function depends on data that's calculated outside of it's scope, then include in the dependency array. In this example, we have a Click Counter function. The function will only be re-calculated when the 'count' state changes."
+          }
+        ],
         "docs": "https://react.dev/reference/react/useCallback",
         "completed": false
       },
