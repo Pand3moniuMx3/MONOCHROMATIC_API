@@ -25,15 +25,15 @@
         "examples": [
           {
             "image": "/project-setup/image-1.png",
-            "explanation": "Open your command prompt (or terminal on Mac), navigate to the folder you want to create the app in, and run 'npx create-react-app' followed by the name of your project."
+            "explanation": "Run 'npx create-react-app' followed by the name of your project in the terminal."
           },
           {
             "image": "/project-setup/image-2.png",
-            "explanation": "After running the create command, Node.js will download all the necessary packages and set up the React project for you. Once this process is finished, you can open your project."
+            "explanation": "Once Node.js finished downloading all necessary packages, you can open the project."
           },
           {
             "image": "/project-setup/image-3.png",
-            "explanation": "The first thing you need to do after creating a new React project, is cleaning up the files a little. Open up the /public and /src folders, and delete the highlighted files, along with their imports."
+            "explanation": "Clean up the application. Open up the /public and /src folders and delete the highlighted files, along with their imports."
           },
           {
             "image": "/project-setup/image-4.png",
@@ -45,7 +45,7 @@
           },
           {
             "image": "/project-setup/image-6.png",
-            "explanation": "To start your application, open the VScode terminal and run the starting command. Since you made your app using 'create-react-app', the starting command will always be 'npm start'."
+            "explanation": "To start your application, open the VScode terminal and run 'npm start'. If your app was made using Vite, run 'npm run dev'."
           }
         ],
         "docs": "https://react.dev/learn/start-a-new-react-project",
